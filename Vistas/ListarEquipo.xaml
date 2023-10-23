@@ -1,0 +1,30 @@
+﻿<Window x:Class="FC_WPF.Vistas.ListarEquipo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FC_WPF.Vistas"
+        mc:Ignorable="d"
+        Title="ListarEquipo" Height="450" Width="800" Activated="Window_Activated">
+    <Grid>
+        <DataGrid x:Name="TodosEquipo" Margin="10,90,10,10" SelectionChanged="TodosEquipo_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Actualizar">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="btnActualizar" Content="Actualizar" Click="btnActualizar"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Eliminar">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="btnEliminar" Content="Eliminar" Click="btnEliminar"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

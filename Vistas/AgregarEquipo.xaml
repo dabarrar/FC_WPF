@@ -1,0 +1,30 @@
+﻿<Window x:Class="FC_WPF.Vistas.AgregarEquipo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FC_WPF.Vistas"
+        mc:Ignorable="d"
+        Title="AgregarEquipo" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="NombreEquipo" Content="Nombre del equipo" HorizontalAlignment="Left" Margin="112,74,0,0" VerticalAlignment="Top" Height="31"/>
+        <TextBox x:Name="txtNombreEquipo" HorizontalAlignment="Left" Margin="250,74,0,0" VerticalAlignment="Top" Height="25" Width="200"/>
+
+        <Label x:Name="cantidad" Content="Cantidad de jugadores" HorizontalAlignment="Left" Margin="112,110,0,0" VerticalAlignment="Top" Height="31"/>
+        <TextBox x:Name="txtCantidadJugadores" HorizontalAlignment="Left" Margin="250,110,0,0" VerticalAlignment="Top" Height="25" Width="50" PreviewTextInput="CheckTextInput" />
+
+        <Label x:Name="nombreDT" Content="Nombre DT" HorizontalAlignment="Left" Margin="112,146,0,0" VerticalAlignment="Top" Height="30"/>
+        <TextBox x:Name="TxtNombreDT" HorizontalAlignment="Left" Margin="250,146,0,0" VerticalAlignment="Top" Height="25" Width="200"/>
+
+        <Label x:Name="tipoEquipo" Content="Tipo de Equipo" HorizontalAlignment="Left" Margin="112,181,0,0" VerticalAlignment="Top" Height="30"/>
+        <TextBox x:Name="TxtTipoEquipo" HorizontalAlignment="Left" Margin="250,181,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+
+        <Label x:Name="capitanEquipo" Content="Capitan de Equipo" HorizontalAlignment="Left" Margin="112,220,0,0" VerticalAlignment="Top" Height="30"/>
+        <TextBox x:Name="TxtCapitanEquipo" HorizontalAlignment="Left" Margin="250,225,0,0" VerticalAlignment="Top" Height="25" Width="150" RenderTransformOrigin="0.122,0.571"/>
+
+        <Label x:Name="sub21" Content="Tiene Sub 21" HorizontalAlignment="Left" Margin="112,262,0,0" VerticalAlignment="Top" Height="30"/>
+        <CheckBox x:Name="TxTSub21" HorizontalAlignment="Left" Margin="250,262,0,0" VerticalAlignment="Top" Height="25" Width="228" RenderTransformOrigin="0.122,0.571"/>
+
+        <Button Content="Agregar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Height="25" Margin="238,317,0,0" Click="Button_Click"/>
+    </Grid>
+</Window>
